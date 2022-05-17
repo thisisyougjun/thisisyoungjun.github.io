@@ -9,13 +9,71 @@
 
 /*미디어쿼리 해상도에 따리 다시 작성하기*/
 
+
 #body{
     background-color: black;
 }
+/* header.css */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+
+#Main_header{
+    width: 100%;
+    font-weight:100;
+    margin-top: 41px;
+}
+
+.logo_svg{
+    float: left;
+}
+
+.p_title{
+    color: white;
+    line-height: 51px;
+    font-size: 27px;
+}
+
+@media (max-width: 576px) {
+    .p_title{
+        font-size:20px;
+    }
+
+}
+
+.header_title_kr{
+    display: none;
+}
+
+.p_title:hover .header_title_kr{
+    color: white;
+    display: block;
+}
+
+.p_title:hover .header_title_en{
+    display: none;
+}
+
+.Header_Menu{
+    text-align: end;
+    /*width: 250px;
+    margin-left: 61%;*/
+}
+
+.hr{
+    color: white;
+    height: 3px;
+}
+
+.px-6{
+    padding-left: 1rem;
+    padding-right: 0px;
+}
+
+/* section */
 
 #main_section{
     width: 100%;
-    height: 70%;
+    height: 77.6%;
 }
 
 #main_section::-webkit-scrollbar{
@@ -23,11 +81,8 @@
 }
 
 .contents_block{
-
-
         width:400px;
         height:448px;
-
     background-color: white;
 }
 
@@ -62,9 +117,14 @@
     font-family: Pretendard;
     font-weight:200;
 }
-
-
-
 a:link{color: white;text-decoration: none;}
 a:visited { color: white; text-decoration: none;}
 a:hover { color: white; text-decoration: none;}
+
+/*footer*/
+
+
+.footer{
+    width: 100%;
+    height: 78px;
+}
